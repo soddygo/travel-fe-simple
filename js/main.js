@@ -3,7 +3,7 @@ require.config({
     paths: {
         // "$" : "./plugins/jquery/jquery-3.5.1.min",
         // jquery: './plugins/jquery/jquery-3.5.1.min',
-        "jquery" : ["http://code.jquery.com/jquery-1.9.1.js"],
+        "jquery" : ['./plugins/jquery-1.9.1'],
     }
 });
 

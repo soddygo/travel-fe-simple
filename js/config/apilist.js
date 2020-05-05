@@ -1,4 +1,4 @@
-// define('travel-fe-simple/js/config/apilist', function (require, exports, module) {
+define('travel-fe-simple/js/config/apilist', function (require, exports, module) {
 	var URL, URL1, CGI;
 	URL = {
 		//获取登录用户信息
@@ -141,4 +141,4 @@
 		URL: URL,
 		URL1: URL1
 	});
-// });
+});
