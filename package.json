@@ -11,6 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "jquery": "^3.5.1",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "vue": "^2.6.11"
   }
 }

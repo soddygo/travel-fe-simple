@@ -43,17 +43,17 @@
         timeout: CFG.TIMEOUT,
         success: function (res) {
           if (typeof callback == 'function') {
-            _fn.callbackProxy(res, callback);
+            callback(res);
           }
         },
-        error: function () {
+        error: function (res) {
           let data = {
             code: '-1',
             result: '加载数据失败',
             data: {}
           };
           if (typeof callback == 'function') {
-            _fn.callbackProxy(data, callback);
+            callback(res);
           }
         }
       });
@@ -94,17 +94,17 @@
         timeout: CFG.TIMEOUT,
         success: function (res) {
           if (typeof callback == 'function') {
-            _fn.callbackProxy(res, callback);
+            callback(res);
           }
         },
-        error: function () {
+        error: function (res) {
           let data = {
             code: '-1',
             result: '加载数据失败',
             data: {}
           };
           if (typeof callback == 'function') {
-            _fn.callbackProxy(data, callback);
+            callback(res);
           }
         }
       });
@@ -150,12 +150,12 @@
         processData: false,
         success: function (res) {
           if (typeof callback == 'function') {
-            _fn.callbackProxy(res, callback);
+            callback(res);
           }
         },
         error: function (res) {
           if (typeof callback == 'function') {
-            _fn.callbackProxy(res, callback);
+            callback(res);
           }
         }
       });
@@ -262,7 +262,6 @@
   }
   define('travel-fe-simple/js/config/ajax', function (require, exports, module) {
     let api = require('travel-fe-simple/js/config/apimix');
-    console.log("<<<<<<<<<<<");
     module.exports = $.extend(handle, api);
 
   });
