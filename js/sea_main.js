@@ -1,7 +1,7 @@
 
 seajs.config({
     alias:{
-        'jquery':'./plugins/jquery/jquery-3.5.1.min',
+        'jquery':'/travel-fe-simple/js/plugins/jquery/jquery-3.5.1.min',
     }
 });
 define(function (require, exports, module) {

@@ -261,7 +261,7 @@
 
   }
   define('travel-fe-simple/js/config/ajax', function (require, exports, module) {
-    let api = require('travel-fe-simple/js/config/dataapimix');
+    let api = require('travel-fe-simple/js/config/apilist');
     module.exports = $.extend(handle, api);
 
   });
