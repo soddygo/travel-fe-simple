@@ -4,6 +4,11 @@ define("init",function (require, exports, module) {
 
     var ajax = require('travel-fe-simple/js/config/ajax');
 
+    ajax.post(ajax.returnSupplierList,{},function (res) {
+
+        console.log("test")
+    })
+
     console.log("sssssssss")
     var vue = new Vue({
         el: "#app",
